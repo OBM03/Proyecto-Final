@@ -1,0 +1,24 @@
+<html>
+    <%-include('partials/head.html');%>
+
+    <body>
+        <header>
+            <%-include('partials/navegacion.html');%>     
+        </header>
+        
+        <div class="contacta">
+            <h1>Contáctanos</h1>
+            <form id="form" class="topBefore" action="agregar.php"  method="post">
+                <input id="email" type="text" placeholder="E-MAIL" name="email">
+                <input id="nombre" type="text" placeholder="Nombre" name="nombre">
+                <input id="telefono" type="text" placeholder="Telefono" name="telefono">
+                <textarea id="direccion" type="text" placeholder="Direccion" name="direccion"></textarea>
+                <input id="asunto" type="text" placeholder="Asunto" name="asunto">
+                <textarea id="descripcion" type="text" placeholder="Descripción" name="descripcion"></textarea>
+                <input id="submit" type="submit" value="Enviar"> 
+            </form>
+        </div>
+        
+    <%-include('partials/footer.html');%>
+    </body>
+</html>
